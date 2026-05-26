@@ -4,26 +4,57 @@ body {
     font-family: Quicksand, sans-serif;
 }
 
+.homepage-content {
+    background-color:rgb(207, 250, 137);
+    max-width: 1100px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.about-wrapper {
+    display: flex;
+}
+
+.about-wrapper img {
+    display: flex;
+}
+
 nav {
     background-color:rgb(80, 223, 147);
     color:rgb(191, 249, 191);
-    text-align:center;
+    height: 65px;
+    text-align:left;
     padding:10px;
     font-family: 'Elms Sans', sans-serif;
-    font-size: 18px;
+    font-size: 19px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2e4d34;
+    font-weight: 600;
 }
 
 header {
     background-color:rgb(51, 51, 135);
     color:rgb(191, 249, 191);
+    height: 150px;
     text-align:center;
     padding:10px;
-    font-family: 'Elms Sans', sans-serif;
+    font-family: 'Elms Sans', sans-serif , bold;
 }
 
 h1 {
     color:rgb(11, 11, 95);
     text-align:center;
+    font-size: 80px;
     font-family: 'Elms Sans', sans-serif;
 }
 h2 {
@@ -31,7 +62,7 @@ h2 {
     text-align:center;
     font-family: 'Elms Sans', sans-serif;
     background-color:rgb(49, 114, 211);
-    
+    padding: 10px;
 }
 
 h3 {
