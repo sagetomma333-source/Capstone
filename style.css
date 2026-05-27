@@ -35,6 +35,7 @@ header h1 {
     font-weight: BOLD;
 }
 
+
 /* ===========================
    NAVIGATION
    =========================== */
@@ -88,9 +89,10 @@ nav a:hover {
    =========================== */
 .content-box {
     background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(207, 250, 137);
     border-radius: 12px;
-    padding: 24px;
-    margin: 20px auto;
+    padding: 25px;
+    margin: 20px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
     max-width: 1000px;
 }
@@ -246,10 +248,12 @@ figcaption {
    FOOTER
    =========================== */
 footer {
+    border-top: 4px solid rgb(207, 250, 137);
     background-color: rgb(80, 223, 147);
     color: rgb(11, 11, 95);
     text-align: center;
     padding: 20px;
+    padding-top: 10px;
     margin-top: 30px;
     font-family: 'Elms Sans', sans-serif;
 }
@@ -258,6 +262,11 @@ footer p {
     margin: 0;
 }
 
+#site-credit {
+    font-size: 14px;
+    color: #666;
+    align-items: center;
+}
 
 
 
