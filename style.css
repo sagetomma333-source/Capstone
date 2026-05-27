@@ -98,6 +98,58 @@ nav {
         border-radius: 10px;
     }
 }
+
+.info-section {
+    display:flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.info-section-img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.info-text {
+    flex: 1;
+}
+
+/* Modifier to flip image and text order */
+.info-section.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Ensure text inside info sections is left-aligned for readability */
+.info-section .info-text,
+.info-section .info-text p,
+.info-section .info-text h2 {
+    text-align: left;
+}
+
+/* Responsive: stack image and text on small screens */
+@media (max-width: 600px) {
+    .info-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .info-section.reverse {
+        flex-direction: column;
+    }
+    .info-section .info-text,
+    .info-section .info-text p,
+    .info-section .info-text h2 {
+        text-align: center;
+    }
+    .info-section-img {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 360px;
+    }
+}
+
 /* ===========================
    TYPOGRAPHY
    =========================== */
