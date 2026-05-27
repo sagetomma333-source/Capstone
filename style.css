@@ -8,6 +8,10 @@ body {
     padding: 0;
 }
 
+::selection {
+    margin: 20px 0;
+}
+
 /* ===========================
    HEADER
    =========================== */
@@ -75,6 +79,25 @@ nav {
     margin-bottom: 20px;
 }
 
+/* ===========================
+   add .content-box for styling each section
+   =========================== */
+.content-box {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 20px auto;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    max-width: 1000px;
+}
+
+@media (max-width: 600px) {
+    .content-box {
+        padding: 16px;
+        margin: 12px;
+        border-radius: 10px;
+    }
+}
 /* ===========================
    TYPOGRAPHY
    =========================== */
