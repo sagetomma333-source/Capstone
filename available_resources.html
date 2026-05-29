@@ -1,62 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Available Resources</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <h1>Indigenous Student Resource Hub</h1>
-        </header>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="RootswhoWeSupport.html">Roots: Who We Support</a></li>
-                <li><a href="pathwaysacademicguidance.html">Pathways: Academic Guidance</a></li>
-                <li><a href="balancewellnessandgrounding.html">Balance: Wellness and Grounding</a></li>
-                <li><a href="communitystudentnetworks.html">Community: Student Networks</a></li>
-                <li><a href="successstoriesinspirationandconnection.html">Success Stories: Inspiration and Connection</a></li>
-                <li><a href="available_resources.html">Available Resources</a></li>
-            </ul>
-        </nav>
-        <banner class="page-banner">
-            <h2>Available Resources</h2>
-        </banner>
-        <main class="homepage-content">
-            <div class="content-box">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Resources</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Indigenous Student Resource Hub</h1>
+    </header>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="RootswhoWeSupport.html">Roots: Who We Support</a></li>
+            <li><a href="pathwaysacademicguidance.html">Pathways: Academic Guidance</a></li>
+            <li><a href="balancewellnessandgrounding.html">Balance: Wellness and Grounding</a></li>
+            <li><a href="communitystudentnetworks.html">Community: Student Networks</a></li>
+            <li><a href="successstoriesinspirationandconnection.html">Success Stories: Inspiration and Connection</a></li>
+            <li><a href="available_resources.html">Available Resources</a></li>
+        </ul>
+    </nav>
+
+    <!-- FIXED: replaced invalid <banner> -->
+    <section class="page-banner">
+        <h2>Available Resources</h2>
+    </section>
+    <main class="homepage-content">
+        <div class="content-box">
             <div class="welcome-message">
                 <figure>
                     <h2>Available Resources for Indigenous Online Learners</h2>
-                    <div class="info-section reverse">
-                        <img src="Images/Tree-header - Copy.jpg" alt="Tree header image representing resources and growth" class="info-section-img">
-                        <div class="info-text">
-                            <p>A curated list of <em>tools, funding, </em> and <em>supports</em> designed to help Indigenous online learners succeed academically and personally.</p>
-                        </div>
+                    <section class="resource-intro side-by-side">
+                    <div class="intro-image">
+                        <img 
+                        src="Images/Tree-header - Copy.jpg" 
+                        alt="Tree header image representing resources and growth"
+                        >
                     </div>
-                    <figcaption>Tools, supports, and opportunities.</figcaption>
+                    <div class="intro-text">
+                        <p>
+                        A curated list of <em>tools, funding,</em> and <em>supports</em> designed to help Indigenous online learners 
+                        succeed academically and personally.
+                        </p>
+                    </div>
+                    </section>
+                    </div>
                 </figure>
-                <p>This page will provide a comprehensive list of resources available to Indigenous online learners, including academic support tools, funding opportunities, wellness practices, and community networks.</p>
             </div>
+        </div>
+
+        <!-- ALL RESOURCES NOW LIVE INSIDE THE SAME MAIN TAG -->
+        <div class="content-box">
+
             <section>
                 <h2>Academic Support Tools</h2>
                 <ul>
-                    <li><a href="https://www.khanacademy.org/">Khan Academy</a> - Free online courses and resources for a wide range of subjects.</li>
-                    <li><a href="https://www.coursera.org/">Coursera</a> - Online courses from top universities and organizations.</li>
-                    <li><a href="https://www.edx.org/">edX</a> - Access to high-quality education from leading institutions.</li>
+                    <li><a href="https://www.khanacademy.org/">Khan Academy</a> — Free online courses and resources for a wide range of subjects.</li>
+                    <li><a href="https://www.coursera.org/">Coursera</a> — Online courses from top universities and organizations.</li>
+                    <li><a href="https://www.edx.org/">edX</a> — Access to high-quality education from leading institutions.</li>
                 </ul>
             </section>
-            <section>
-                <h2>Resources</h2>
-                <p>Here are some helpful resources for Online Learners</p>
-                <a href="https://www.fnesc.ca/learningfirstpeoples/">Learning First Peoples</a>
+
+            <section class="resource-links">
+                <h2>Student Resources</h2>
+
+                <!-- Indigenous Student Supports -->
+                <div class="resource-card">
+                    <h3>Indigenous Student Assistance (BC Gov)</h3>
+                    <p>Financial aid, scholarships, training programs, and supports for Indigenous learners in B.C.</p>
+                    <a href="https://www2.gov.bc.ca/gov/content/education-training/post-secondary-education/financial-aid/indigenous-students" target="_blank">Visit Resource</a>
+                </div>
+
+                <div class="resource-card">
+                    <h3>Indspire – Bursaries & Scholarships</h3>
+                    <p>National Indigenous bursaries, scholarships, and career development programs.</p>
+                    <a href="https://indspire.ca/programs/students/bursaries-scholarships/" target="_blank">Visit Resource</a>
+                </div>
+
+                <div class="resource-card">
+                    <h3>First Nations Health Authority (FNHA)</h3>
+                    <p>Mental health, wellness, cultural supports, and community programs for Indigenous peoples in BC.</p>
+                    <a href="https://www.fnha.ca" target="_blank">Visit Resource</a>
+                </div>
+
+                <div class="resource-card">
+                    <h3>Quizlet</h3>
+                    <p>Flashcards, study sets, and practice quizzes for any subject.</p>
+                    <a href="https://quizlet.com" target="_blank">Visit Resource</a>
+                </div>
+
+                <!-- Wellness & Mental Health -->
+                <div class="resource-card">
+                    <h3>Here2Talk (BC Students)</h3>
+                    <p>Free 24/7 mental health counselling for all post-secondary students in British Columbia.</p>
+                    <a href="https://here2talk.ca" target="_blank">Visit Resource</a>
+                </div>
+
+                <div class="resource-card">
+                    <h3>Kids Help Phone (All Ages)</h3>
+                    <p>24/7 crisis support, chat, and phone counselling for youth and young adults.</p>
+                    <a href="https://kidshelpphone.ca" target="_blank">Visit Resource</a>
+                </div>
+
+                <!-- Financial Aid -->
+                <div class="resource-card">
+                    <h3>StudentAid BC</h3>
+                    <p>Grants, loans, and financial support for BC students.</p>
+                    <a href="https://studentaidbc.ca" target="_blank">Visit Resource</a>
+                </div>
+
+                <div class="resource-card">
+                    <h3>Canada Student Financial Assistance</h3>
+                    <p>Federal grants, loans, and repayment assistance.</p>
+                    <a href="https://www.canada.ca/en/services/benefits/education/student-aid.html" target="_blank">Visit Resource</a>
+                </div>
+
             </section>
-            </div>
-        </main>
-        <footer>
-            <p><a href="index.html">Back to Home</a></p>
-        </footer>
-    </body>
+        </div>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Back to Home</a></p>
+    </footer>
+
+</body>
 </html>
