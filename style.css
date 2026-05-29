@@ -1,6 +1,22 @@
 /* ===========================
    GENERAL STYLES
    =========================== */
+:root {
+    --container-max-width: 1200px;
+    --content-max-width: 1000px;
+    --container-padding: 20px;
+    --content-padding: 24px;
+    --box-padding: 24px;
+    --box-margin: 20px;
+    --banner-height: 140px;
+    --banner-gap: 18px;
+    --footer-padding: 20px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     background: linear-gradient(180deg, #f7fcff, #e6f6fb); /* soft sea-ray background */
     font-family: Quicksand, sans-serif;
@@ -63,7 +79,7 @@ nav a:hover {
 
 .nav-links a {
     text-decoration: none;
-    color: #2e4d34;
+    color: #e6f7ff;
     font-weight: 600;
 }
 
@@ -77,7 +93,7 @@ nav a:hover {
 .homepage-content {
     background: linear-gradient(180deg, #eaf6ff, #d6eefb); /* soft ocean-tinted background */
     max-width: 1100px;
-    padding: 24px;
+    padding: var(--content-padding);
     margin: 0 auto;
 }
 
@@ -85,13 +101,14 @@ nav a:hover {
    PAGE CONTAINER
    =========================== */
 .container {
-    max-width: 1200px; /* constrain overall page content */
+    max-width: var(--container-max-width); /* constrain overall page content */
     margin: 0 auto;    /* center the container horizontally */
-    padding: 20px;
-    background-image: url('Images/ocean-rocks.jpg');
+    padding: var(--container-padding);
+    /* subtle dark gradient overlay over a water/ocean photo for legibility */
+    background-image: linear-gradient(rgba(0,0,0,0.28), rgba(0,0,0,0.12)), url('Images/ocean-rocks.jpg');
     background-repeat: no-repeat;
-    background-position: center top; /* adjust vertical/horizontal focal point */
-    background-size: 140% auto; /* make background image appear larger */
+    background-position: center center; /* center image */
+    background-size: cover; /* cover entire container for better visibility */
     border-radius: 12px;
 }
 
@@ -107,7 +124,7 @@ nav a:hover {
 .intro-box {
     display: flex;
     gap: 20px;
-    align-items: center;
+        padding: 0 12px;
 }
 
 .intro-image-box {
@@ -119,22 +136,22 @@ nav a:hover {
 }
 
 /* Banner at top of main page */
-banner.page-banner {
+.page-banner {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 180px;
+    height: var(--banner-height);
     color: #ffffff;
     text-align: center;
-    background-image: none; /* removed banner image */
-    background-color: rgba(47,127,179,0.85); /* ocean-blue block */
+    background: transparent; /* banner is transparent so underlying photo shows through */
     border-radius: 10px;
-    margin-bottom: 18px;
+    margin-bottom: var(--banner-gap);
+    padding: 0 12px;
 }
 
-banner.page-banner h2 {
-    background: rgba(0, 60, 100, 0.15);
-    padding: 8px 14px;
+.page-banner h2 {
+    background: rgba(0, 0, 0, 0.35); /* dark translucent block for legibility */
+    padding: 6px 12px;
     border-radius: 6px;
 }
 
@@ -149,10 +166,10 @@ banner.page-banner h2 {
     background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(235,247,255,0.9));
     border: 2px solid #7fb3d5; /* ocean-blue border */
     border-radius: 12px;
-    padding: 24px;
-    margin: 20px;
+    padding: var(--box-padding);
+    margin: var(--box-margin) auto;
     box-shadow: 0 8px 20px rgba(15, 60, 90, 0.08);
-    max-width: 1000px;
+    max-width: var(--content-max-width);
 }
 
 @media (max-width: 600px) {
@@ -475,7 +492,7 @@ footer {
     background-color: #2f9aa3;
     color: #033e5a;
     text-align: center;
-    padding: 20px;
+    padding: var(--footer-padding);
     padding-top: 10px;
     margin-top: 30px;
     font-family: 'Elms Sans', sans-serif;
